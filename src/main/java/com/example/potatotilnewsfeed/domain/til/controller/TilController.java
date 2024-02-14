@@ -45,7 +45,7 @@ public class TilController {
         this.tilService = tilService;
     }
 
-    @PostMapping("/v1/tils/all")
+    @PostMapping("/v1/tils")
     public ResponseEntity<ResponseDto<List<TilData>>> createTil(@RequestBody TilDto tilDto,
         HttpServletResponse response) {
         log.info("TIL 생성 API");
